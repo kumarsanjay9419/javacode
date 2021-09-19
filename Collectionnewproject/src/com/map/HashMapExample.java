@@ -22,18 +22,26 @@ public static void main(String[] args) {
 		System.out.println(hm.get("KK"));
                  */
 	
-	     	    Map<Employee, Integer> map=new HashMap<>();
+	     	    Map<Employee, Employee1> map=new HashMap<>();
+	     Employee e1=new Employee();   //key e1 
+	    Employee1 e2=new Employee1();  //value e2
+      //for key and value store as an object..
 	    
-	    
-	    Employee e1=new Employee();
+	  //for Employee
 	    e1.setId(101);
 	    e1.setName("sanjay");
 	    e1.setAge(25);
-	    map.put(e1, 10);
-
-	    //System.out.println(map);
 	    
-	    System.out.println(map.get(e1));
+	    
+	    //for Employee1
+	    e2.setId(10);
+	    e2.setName("KL");
+	    e2.setAge(20);
+	    map.put(e1, e2);
+
+	    System.out.println(map);
+	    
+	    //System.out.println(map.get(e1));
 	
 	}
 
